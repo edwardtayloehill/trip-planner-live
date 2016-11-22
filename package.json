@@ -16,7 +16,7 @@
     "body-parser": "^1.13.3",
     "bootstrap": "3.3.5",
     "express": "^4.13.3",
-    "jquery": "2.1.4",
+    "jquery": "^3.1.1",
     "nunjucks": "^2.5.2",
     "pg": "^4.5.5",
     "pg-hstore": "^2.3.2",
