@@ -20,7 +20,7 @@
               <option>{{ hotel.name }}</option>
             {% endfor %} -->
             </select>
-            <button data-action="add" class="btn btn-primary btn-circle pull-right">+</button>
+            <button id="hotelsButton" data-action="add" class="btn btn-primary btn-circle pull-right">+</button>
           </div>
           <div>
             <h4>Restaurants</h4>
@@ -29,7 +29,7 @@
                 <!-- <option>{{ restaurant.name }}</option> -->
               <!-- {% endfor %} -->
             </select>
-            <button data-action="add" class="btn btn-primary btn-circle pull-right">+</button>
+            <button id="restaurantsButton" data-action="add" class="btn btn-primary btn-circle pull-right">+</button>
           </div>
           <div>
             <h4>Activities</h4>
@@ -38,7 +38,7 @@
                 <!-- <option>{{ activity.name }}</option> -->
               <!-- {% endfor %} -->
             </select>
-            <button data-action="add" class="btn btn-primary btn-circle pull-right">+</button>
+            <button id="activitiesButton" data-action="add" class="btn btn-primary btn-circle pull-right">+</button>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
           <div>
             <h4>My Hotel</h4>
             <ul class="list-group">
-              <div class="itinerary-item">
+              <div class="itinerary-item" id="hotelItinerary">
                 <!-- <span class="title">Andaz Wall Street</span> -->
                 <button class="btn btn-xs btn-danger remove btn-circle">x</button>
               </div>
@@ -72,7 +72,7 @@
           <div>
             <h4>My Restaurants</h4>
             <ul class="list-group">
-              <div class="itinerary-item">
+              <div class="itinerary-item" id="restaurantsItinerary">
                 <!-- <span class="title">Bouley</span> -->
                 <button class="btn btn-xs btn-danger remove btn-circle">x</button>
               </div>
@@ -81,7 +81,7 @@
           <div>
             <h4>My Activities</h4>
             <ul class="list-group">
-              <div class="itinerary-item">
+              <div class="itinerary-item" id="activitiesItinerary">
                 <!-- <span class="title">Mahayana Buddhist Temple Association</span> -->
                 <button class="btn btn-xs btn-danger remove btn-circle">x</button>
               </div>
@@ -91,7 +91,7 @@
       </div>
     </div>
   </div>
-  <script> 
+  <script>
     var hotels = {{ hotels | dump | safe }};
     var restaurants = {{ restaurants | dump | safe }};
     var activities = {{ activities | dump | safe }};
