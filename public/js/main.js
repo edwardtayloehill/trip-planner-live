@@ -1,4 +1,5 @@
 var drawMarker;
+var clearMap;
 
 $(function initializeMap (){
 
